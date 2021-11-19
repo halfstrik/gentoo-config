@@ -1,0 +1,9 @@
+# package.use# required by www-client/firefox-91.3.0::gentoo[system-libvpx]
+# required by www-client/firefox (argument)
+>=media-libs/libvpx-1.10.0 postproc
+# required by www-client/chromium-95.0.4638.69::gentoo
+# required by www-client/chromium (argument)
+>=sys-libs/zlib-1.2.11-r4 minizip
+# required by www-client/chromium-95.0.4638.69::gentoo
+# required by www-client/chromium (argument)
+>=net-libs/nodejs-14.17.6 inspector

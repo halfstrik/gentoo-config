@@ -1,0 +1,4 @@
+#!/bin/bash
+
+/bin/chmod a+w /sys/devices/platform/applesmc.768/leds/smc\:\:kbd_backlight/brightness
+/bin/chmod a+w /sys/class/backlight/intel_backlight/brightness
