@@ -8,6 +8,7 @@ HASH_LEN = 64
 CBOLD = '\33[1m'
 CGREEN = '\33[32m'
 CRED = '\033[91m'
+CYELLOW = '\33[33m'
 CEND = '\033[0m'
 
 
@@ -28,8 +29,11 @@ def traverse_and_print(root):
                     action = ask_confirmation()
                     if action == 'diff':
                         print_difference(src_file_path, dst_file_path)
-                    elif action == 'yes':
+                    elif action == 'use-git':
                         overwrite_file(src_file_path, dst_file_path)
+                        break
+                    elif action == 'use-dst':
+                        overwrite_file(dst_file_path, src_file_path)
                         break
                     else:
                         print('  Choose to skip...')
@@ -43,8 +47,9 @@ def get_file_hash(full_path):
 
 def ask_confirmation() -> str:
     while True:
-        answer = input(f'  files are different, overwrite? [{CGREEN}yes{CEND}/{CRED}no{CEND}/diff] ')
-        if answer not in ('yes', 'no', 'diff'):
+        answer = input(f'  files are different, overwrite?'
+                       f' [{CGREEN}use-git{CEND}/{CYELLOW}use-dst{CEND}/{CRED}skip{CEND}/diff] ')
+        if answer not in ('use-git', 'use-dst', 'skip', 'diff'):
             continue
         return answer
 

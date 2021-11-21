@@ -4,7 +4,7 @@ created mostly for educational purposes and to help keep track of my setup.
 
 ## Sync files
 ```shell
-su -
+su -  # (if sync git -> root)
 cd /home/sergey/Projects/gentoo-config/
 python syncfiles.py
 ```
@@ -18,3 +18,4 @@ python syncfiles.py
  * Set up emails in Emacs
  * Set up Conky
  * Update `slstatus` by chron and volume buttons (fewer updates, more accurate)
+ * PyCharm does not remember GitHub token without Gnome keyring (https://youtrack.jetbrains.com/issue/PY-33817)
