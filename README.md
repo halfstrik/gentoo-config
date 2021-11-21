@@ -8,3 +8,6 @@ created mostly for educational purposes and to help keep track of my setup.
  * Set up screen locker
  * Set up Japanese and Russian inputs
  * Collect instruction for system maintenance
+ * Set up emails in Emacs
+ * Set up Conky
+
