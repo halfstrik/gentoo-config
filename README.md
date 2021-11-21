@@ -10,4 +10,4 @@ created mostly for educational purposes and to help keep track of my setup.
  * Collect instruction for system maintenance
  * Set up emails in Emacs
  * Set up Conky
-
+ * Update `slstatus` by chron and volume buttons (fewer updates, more accurate)
