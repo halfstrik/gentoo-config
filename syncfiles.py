@@ -72,3 +72,4 @@ def overwrite_file(src_file_path, dst_file_path):
 if __name__ == '__main__':
     print('Execution')
     traverse_and_print('etc')
+    traverse_and_print('home')

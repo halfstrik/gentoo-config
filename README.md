@@ -12,7 +12,7 @@ python syncfiles.py
 ## TODOs
  * Wireless card uses open-source driver which may cause problems.
  * Screen brightness goes to max after lid re-open.
- * Set up screen locker
+ * ~~Set up screen locker~~ (slock)
  * Set up Japanese and Russian inputs
  * Collect instruction for system maintenance
  * Set up emails in Emacs

@@ -67,6 +67,9 @@
 "amixer set Master toggle"
    XF86AudioMute
 
+"slock"
+   Shift + Escape
+
 ##################################
 # End of xbindkeys configuration #
 ##################################
