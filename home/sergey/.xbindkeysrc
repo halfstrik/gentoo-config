@@ -60,11 +60,11 @@
   XF86MonBrightnessUp
   # m:0x0 + c:233
 
-"amixer set Master playback 1+ unmute"
+"amixer set Master playback 2+ unmute && sh ./Programs/slstatus/update-once.sh"
    XF86AudioRaiseVolume
-"amixer set Master playback 1-"
+"amixer set Master playback 2- && sh ./Programs/slstatus/update-once.sh"
    XF86AudioLowerVolume
-"amixer set Master toggle"
+"amixer set Master toggle && sh ./Programs/slstatus/update-once.sh"
    XF86AudioMute
 
 "slock"

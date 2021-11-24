@@ -13,7 +13,7 @@ python syncfiles.py
  * Wireless card uses open-source driver which may cause problems.
  * Screen brightness goes to max after lid re-open.
  * ~~Set up screen locker~~ (slock)
- * Set up Japanese and Russian inputs
+ * Set up Japanese ~~and Russian~~ inputs (partially - Japanese only in Emacs with mozc-mode, re-try iBus)
  * Collect instruction for system maintenance
  * Set up emails in Emacs
  * Set up Conky

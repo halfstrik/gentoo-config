@@ -1,3 +1,11 @@
+# TODO: iBus does not work anywhere exept emacs
+# export XMODIFIERS=@im=ibus
+# export GTK_IM_MODULE=ibus
+# export QT_IM_MODULE=ibus
+# ibus-daemon -drx
+
+setxkbmap -layout us,ru -option grp:win_space_toggle
+
 xbindkeys
 ./Programs/slstatus/slstatus &
 
