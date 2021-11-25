@@ -17,5 +17,5 @@ python syncfiles.py
  * Collect instruction for system maintenance
  * Set up emails in Emacs
  * ~~Set up Conky~~
- * Update `slstatus` by chron and volume buttons (fewer updates, more accurate)
+ * ~~Update `slstatus` by chron and volume buttons (fewer updates, more accurate)~~
  * PyCharm does not remember GitHub token without Gnome keyring (https://youtrack.jetbrains.com/issue/PY-33817)
