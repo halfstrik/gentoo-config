@@ -12,10 +12,10 @@ python syncfiles.py
 ## TODOs
  * Wireless card uses open-source driver which may cause problems.
  * Screen brightness goes to max after lid re-open.
- * ~~Set up screen locker~~ (slock)
+ * ~~Set up screen locker~~ (slock, find out why laptop not sleep on lid close)
  * Set up Japanese ~~and Russian~~ inputs (partially - Japanese only in Emacs with mozc-mode, re-try iBus)
  * Collect instruction for system maintenance
  * Set up emails in Emacs
- * Set up Conky
+ * ~~Set up Conky~~
  * Update `slstatus` by chron and volume buttons (fewer updates, more accurate)
  * PyCharm does not remember GitHub token without Gnome keyring (https://youtrack.jetbrains.com/issue/PY-33817)

@@ -67,6 +67,9 @@
 "amixer set Master toggle && sh ./Programs/slstatus/update-once.sh"
    XF86AudioMute
 
+"((setxkbmap -query | grep -q 'layout:\s\+us') && setxkbmap -layout ru,us || setxkbmap us,ru) && sh ./Programs/slstatus/update-once.sh"
+   Mod4 + space
+
 "slock"
    Shift + Escape
 
