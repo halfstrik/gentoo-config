@@ -1,0 +1,35 @@
+IMAPAccount mespetrunin
+# Address to connect to
+Host mail.sergeypetrunin.com
+User me
+# Pass or PassCmd
+# To store the password in an encrypted file use PassCmd instead of Pass
+# PassCmd "gpg2 -q --for-your-eyes-only --no-tty -d ~/.mailpass.gpg"
+# PassCmd "cat .mail/halfstrik-gmail-app-pass"
+#
+# Use SSL
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+IMAPStore mespetrunin-remote
+Account mespetrunin
+
+MaildirStore mespetrunin-local
+SubFolders Verbatim
+# The trailing "/" is important
+Path ~/.mail/mespetrunin/
+Inbox ~/.mail/mespetrunin/Inbox
+
+Channel mespetrunin
+Master :mespetrunin-remote:
+Slave :mespetrunin-local:
+# Exclude everything under the internal [Gmail] folder, except the interesting folders
+# Patterns * ![Gmail]* "[Gmail]/Sent Mail" "[Gmail]/Starred" "[Gmail]/All Mail"
+# Or include everything
+Patterns *
+# Automatically create missing mailboxes, both locally and on the server
+Create Both
+# Sync the movement of messages between folders and deletions, add after making sure the sync works
+Expunge Both
+# Save the synchronization state files in the relevant directory
+# SyncState *

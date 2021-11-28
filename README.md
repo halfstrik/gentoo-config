@@ -19,3 +19,21 @@ python syncfiles.py
  * ~~Set up Conky~~
  * ~~Update `slstatus` by chron and volume buttons (fewer updates, more accurate)~~
  * PyCharm does not remember GitHub token without Gnome keyring (https://youtrack.jetbrains.com/issue/PY-33817)
+ * Setup bluetooth headset (work in progress, making bluez-alsa work, no PulseAudio for now)
+
+## Useful links
+https://wiki.archlinux.org/title/Mac
+
+## Wireless download problem
+Problem appears with `wget`, to reproduce:
+```wget https://download.jetbrains.com/python/pycharm-community-2021.2.3.tar.gz```
+
+One of the ways to fix - limit bandwidth (https://unix.stackexchange.com/a/28203):
+```tc qdisc add dev wlp2s0b1 root tbf rate 128kbit latency 50ms burst 1540```
+To undo:
+```tc qdisc del dev wlp2s0b1 root```
+
+## Sound in bluetooth headset
+Works in Chrome with
+```google-chrome-stable --alsa-output-device=bluealsa```
+No additional configs used
