@@ -37,3 +37,8 @@ To undo:
 Works in Chrome with
 ```google-chrome-stable --alsa-output-device=bluealsa```
 No additional configs used
+
+Make TOZO-T10 default (all apps need restart)
+```ln -s .asoundrc_tozo_t10 .asoundrc```
+Remove default
+```rm .asoundrc```

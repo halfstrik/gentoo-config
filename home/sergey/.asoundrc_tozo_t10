@@ -1,0 +1,13 @@
+# Bluetooth headset
+pcm.!default {
+    type plug
+    slave.pcm {
+        type bluealsa
+        device "00:28:AB:CE:05:BF"
+        profile "a2dp"
+    }
+    hint {
+        show on
+        description "TOZO-T10 Bluetooth Headset"
+    }
+}
