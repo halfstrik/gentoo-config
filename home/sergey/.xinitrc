@@ -1,4 +1,4 @@
-# TODO: iBus does not work anywhere exept emacs
+# TODO: iBus does not work anywhere except Emacs
 # export XMODIFIERS=@im=ibus
 # export GTK_IM_MODULE=ibus
 # export QT_IM_MODULE=ibus
@@ -14,9 +14,9 @@ conky &
 # Fix Pycharm blank screen: https://unix.stackexchange.com/a/428908
 export _JAVA_AWT_WM_NONREPARENTING=1
 
-# Set walpaper
-if [ -f ~/Pictures/Walpaper01.jpg ] ; then
-    feh --bg-scale ~/Pictures/Walpaper01.jpg
+# Set wallpaper
+if [ -f ~/Pictures/Wallpaper01.jpg ] ; then
+    feh --bg-scale ~/Pictures/Wallpaper01.jpg
 fi
 
 exec dbus-launch --sh-syntax --exit-with-session dwm
